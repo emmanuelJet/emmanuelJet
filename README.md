@@ -4,7 +4,7 @@
   <a href="https://linkedin.com/in/emmanuelJet" target="blank"><img src="https://img.shields.io/badge/LinkedIn-Profile-informational?style=flat&logo=linkedin&logoColor=white&color=8B15BA" alt="LinkedIn Badge" /></a>
   <a href="https://twitter.com/emmanuelJet_" target="blank"><img src="https://img.shields.io/badge/Twitter-Profile-informational?style=flat&logo=twitter&logoColor=white&color=8B15BA" alt="Twitter Badge" /></a>
   <a href="https://github.com/emmanuelJet?tab=followers" target="blank"><img src="https://img.shields.io/github/followers/emmanuelJet?logo=github&logoColor=white&color=8B15BA&label=Followers" alt="GitHub followers" /></a>
-<!--   <img src="https://visitor-badge.glitch.me/badge?page_id=emmanuelJet.emmanuelJet&right_color=purple" alt="ReadMe Visitors" /> -->
+  <img src="https://vbr.wocr.tk/badge?page_id=emmanuelJet.emmanuelJet&logo=github&color=8b15ba&cache=on" alt="ReadMe Visitors" />
 </p>
 
 ---
@@ -81,6 +81,7 @@ With my expertise in the following languages and tools, I bring a wealth of know
     <img alt="Jira" src="https://img.shields.io/badge/jira-%230A0FFF.svg?logo=jira&logoColor=white" />
   </p>
 </details>
+<br />
 
 ## 📈 Stats
 
