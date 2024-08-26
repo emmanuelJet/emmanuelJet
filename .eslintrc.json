@@ -1,3 +1,106 @@
 {
-  "extends": "next/core-web-vitals"
+	"root": true,
+	"extends": [
+		"next",
+		"eslint:recommended",
+		"next/core-web-vitals",
+		"plugin:import/errors",
+		"plugin:import/warnings",
+		"plugin:import/typescript",
+		"plugin:jsx-a11y/recommended",
+		"plugin:@typescript-eslint/recommended"
+	],
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"project": "./tsconfig.json"
+	},
+	"plugins": [
+		"@typescript-eslint",
+		"jsx-a11y",
+		"import"
+	],
+	"rules": {
+		"@typescript-eslint/consistent-type-imports": "error",
+		"@typescript-eslint/no-non-null-assertion": "error",
+		"@typescript-eslint/no-explicit-any": "off",
+		"jsx-a11y/anchor-has-content": "off",
+		"jsx-a11y/media-has-caption": "off",
+		"jsx-a11y/anchor-is-valid": "off",
+		"react/react-in-jsx-scope": "off",
+		"import/no-unresolved": "error",
+		"import/no-duplicates": "error",
+		"no-console": "error",
+		"quotes": [
+			"error",
+			"single",
+			{
+				"avoidEscape": true,
+				"allowTemplateLiterals": true
+			}
+		],
+		"func-style": [
+			"error",
+			"expression",
+      {
+        "allowArrowFunctions": true
+      }
+		],
+		"import/order": [
+			"error",
+			{
+				"groups": [
+					"builtin",
+					"external",
+					"internal"
+				],
+				"pathGroups": [
+					{
+						"pattern": "@/**",
+						"group": "internal",
+						"position": "after"
+					}
+				],
+				"pathGroupsExcludedImportTypes": [
+					"builtin"
+				],
+				"newlines-between": "always"
+			}
+		],
+		"no-warning-comments": [
+			"error",
+			{
+				"terms": [
+					"todo",
+					"fixme"
+				],
+				"location": "anywhere"
+			}
+		],
+		"no-restricted-syntax": [
+			"error",
+			{
+				"selector": "Literal[value=/\\s{2,}/]",
+				"message": "String literals should not contain consecutive white spaces."
+			},
+      {
+        "selector": "FunctionDeclaration",
+        "message": "Use arrow functions instead of function declarations."
+      },
+			{
+				"selector": "FunctionExpression:not(:matches(ClassBody > MethodDefinition > FunctionExpression, ClassBody > MethodDefinition > :function))",
+				"message": "Use arrow functions instead of function expressions."
+			}
+		],
+		"@typescript-eslint/no-unused-vars": [
+			"error",
+			{
+				"varsIgnorePattern": "^_",
+				"argsIgnorePattern": "^_"
+			}
+		],
+		"@typescript-eslint/consistent-type-definitions": [
+			"error",
+			"interface"
+		]
+	}
 }
