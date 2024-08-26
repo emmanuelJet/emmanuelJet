@@ -1,9 +1,9 @@
 runConfig:
-  cpu: 1
-  memoryMiB: 512
-  concurrency: 50
   minInstances: 1
   maxInstances: 10
+  concurrency: 50
+  cpu: 1
+  memoryMiB: 512
   
 env:
   - variable: NEXT_PUBLIC_APP_NAME
@@ -13,9 +13,9 @@ env:
   - variable: NEXT_PUBLIC_APP_ENVIRONMENT
     value: production
   - variable: NEXT_PUBLIC_APP_KEYWORDS
-    value:
+    value: ''
   - variable: NEXT_PUBLIC_APP_VERSION
-    value:
+    value: ''
   - variable: NEXT_PUBLIC_APP_URL
     value: https://emmanueljet.com
   - variable: NEXT_PUBLIC_FIREBASE_APP_ID
