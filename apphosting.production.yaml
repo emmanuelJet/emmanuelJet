@@ -13,9 +13,9 @@ env:
   - variable: NEXT_PUBLIC_APP_ENVIRONMENT
     value: production
   - variable: NEXT_PUBLIC_APP_KEYWORDS
-    value: ''
+    value: NULL
   - variable: NEXT_PUBLIC_APP_VERSION
-    value: ''
+    value: NULL
   - variable: NEXT_PUBLIC_APP_URL
     value: https://emmanueljet.com
   - variable: NEXT_PUBLIC_FIREBASE_APP_ID
