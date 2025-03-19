@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "description": "Emmanuel Joseph (JET) - Web and Blockchain Engineer",
-  "author": "Emmanuel Joseph <me@emmanueljet.com> (https://emmanueljet.com)",
+  "author": "Emmanuel Joseph <hello@emmanueljet.com> (https://emmanueljet.com)",
   "repository": "github:emmanuelJet/emmanuelJet",
   "homepage": "https://emmanueljet.com",
   "license": "UNLICENSED",
@@ -20,7 +20,7 @@
   ],
   "bugs": {
     "url": "https://github.com/emmanuelJet/emmanuelJet/issues/new?title=[Bug]%20TITLE_HERE&body=**Describe%20the%20bug%3A**%0A%0A**Steps%20to%20reproduce%3A**%0A%0A**Expected%20behavior%3A**%0A%0A**Screenshots%20(if%20applicable)%3A**%0A%0A**Additional%20context%3A**%0A%0A&labels=bug&assignees=emmanuelJet",
-    "email": "me@emmanueljet.com"
+    "email": "hello@emmanueljet.com"
   },
   "scripts": {
     "build": "next build",
