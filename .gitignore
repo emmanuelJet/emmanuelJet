@@ -6,14 +6,19 @@ logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+.pnpm-debug.log*
 firebase-debug.log*
 firebase-debug.*.log*
 
 # Dependencies
 /node_modules
 /.pnp
-.pnp.js
-.yarn/install-state.gz
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
 
 # Runtime data
 pids
@@ -40,8 +45,8 @@ bower_components
 /.next/
 /out/
 
-# Compiled binary addons (http://nodejs.org/api/addons.html)
-build/
+# Production
+/build
 
 # npm cache directory
 .npm
@@ -68,9 +73,8 @@ next-env.d.ts
 # Firebase cache
 .firebase/
 
-# Dotenv environment variables file
-.env
-.env*.local
+# Environment files
+.env*
 
 # Misc
 .DS_Store
