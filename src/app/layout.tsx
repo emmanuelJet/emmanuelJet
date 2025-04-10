@@ -1,4 +1,4 @@
-import '@/styles/globals.css';
+import '@/styles/app.css';
 
 import Script from "next/script";
 import type { Metadata } from 'next';
