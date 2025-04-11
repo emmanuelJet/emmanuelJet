@@ -1,12 +1,14 @@
 import '@/styles/app.css';
 
-import Script from "next/script";
 import type { Metadata } from 'next';
 import { Open_Sans } from 'next/font/google';
 import { AnimatePresence } from 'framer-motion';
+
+import ThemeToggle from '@/components/ThemeToggle';
 import appConfig from '@/config/app.config';
 
 const openSans = Open_Sans({
+  weight: ['400', '600', '700'],
   variable: '--font-open-sans',
   subsets: ['latin'],
 });
@@ -24,32 +26,20 @@ const RootLayout = ({
   return (
     <html
       lang='en-GB'
+      className={`${openSans.variable} antialiased select-none`}
     >
       <head>
 				<link rel='preconnect' href='https://firebase.googleapis.com' />
         <link rel='preconnect' href='https://cdnjs.cloudflare.com' />
         <link rel='preconnect' href='https://fonts.googleapis.com' />
-
-        <Script id="theme-switcher" strategy="beforeInteractive">
-          {`
-            if (
-              localStorage.getItem('theme') === 'dark' ||
-              (!('theme' in localStorage) &&
-                window.matchMedia('(prefers-color-scheme: dark)').matches)
-            ) {
-              document.documentElement.classList.add('dark');
-            } else {
-              document.documentElement.classList.remove('dark');
-            }
-          `}
-        </Script>
 			</head>
       <body
-        className={`${openSans.variable} bg-light dark:bg-dark w-full min-h-screen h-full antialiased select-none`}
+        className='bg-[var(--color-bg)] text-[var(--color-text)] transition-colors duration-300'
       >
-        <AnimatePresence initial={false} mode="wait">
-          {children}
-        </AnimatePresence>
+        <div className="absolute top-4 right-4">
+          <ThemeToggle />
+        </div>
+        {children}
       </body>
     </html>
   );
