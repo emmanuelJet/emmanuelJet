@@ -2,7 +2,6 @@ import '@/styles/app.css';
 
 import type { Metadata } from 'next';
 import { Open_Sans } from 'next/font/google';
-import { AnimatePresence } from 'framer-motion';
 
 import ThemeToggle from '@/components/ThemeToggle';
 import appConfig from '@/config/app.config';
