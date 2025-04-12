@@ -96,7 +96,6 @@ export const schemaCreator = {
   hasOccupation: {
     '@type': 'Occupation',
     name: 'Lead Engineer',
-    mainEntityOfPage: url,
     description: 'Lead Engineer at Treate',
     educationRequirements: 'Bsc in Computer Science',
     occupationLocation: {
@@ -105,13 +104,45 @@ export const schemaCreator = {
       alternateName: 'NG'
     },
     estimatedSalary: {
-      '@type': 'MonetaryAmount',
-      name: 'Lead Engineer Monthly Salary',
+      '@type': 'MonetaryAmountDistribution',
+      duration: '1Y',
       currency: 'NGN',
-      minValue: 500000,
-      maxValue: 2500000,
-      value: 1000000,
-    }
+      median: 1000000,
+      percentile10: 900000,
+      percentile25: 950000,
+      percentile75: 1050000,
+      percentile90: 1100000,
+    },
+    skills: [
+      {
+        '@type': 'DefinedTerm',
+        termCode: 'Web Development',
+      },
+      {
+        '@type': 'DefinedTerm',
+        termCode: 'Software Engineering',
+      },
+      {
+        '@type': 'DefinedTerm',
+        termCode: 'Blockchain Engineering',
+      },
+      {
+        '@type': 'DefinedTerm',
+        termCode: 'Blockchain Development',
+      },
+      {
+        '@type': 'DefinedTerm',
+        termCode: 'Smart Contract Development',
+      },
+      {
+        '@type': 'DefinedTerm',
+        termCode: 'Cloud Computing',
+      },
+      {
+        '@type': 'DefinedTerm',
+        termCode: 'DevOps',
+      }
+    ]
   },
 	contactPoint: {
 		'@type': 'ContactPoint',
