@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @theme {
   /* Utility Colors */
@@ -20,23 +20,7 @@
   --color-primary-800: #530b76;
   --color-primary-900: #420961;
   --color-primary-950: #2b0441;
-
-  /* Secondary Colors */
-  --color-secondary: #f18f01;
-  --color-secondary-50: #fff5e6;
-  --color-secondary-100: #ffeacc;
-  --color-secondary-200: #ffd699;
-  --color-secondary-300: #ffc166;
-  --color-secondary-400: #ffad33;
-  --color-secondary-500: #f18f01;
-  --color-secondary-600: #c87301;
-  --color-secondary-700: #9f5a01;
-  --color-secondary-800: #763f00;
-  --color-secondary-900: #4d2a00;
-  --color-secondary-950: #331b00;
 }
-
-@custom-variant dark (&:where(.dark, .dark *));
 
 @layer base {
   body {

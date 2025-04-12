@@ -1,4 +1,4 @@
-<p align="center"><img alt="JET GitHub Readme Header" src="./public/media/jet-gh-readme-header.png" /></p>
+<p align="center"><img alt="JET GitHub Readme Header" src="./public/media/github/emmanueljet-gh-readme-header.png" /></p>
 
 <p align="center">
   <a href="https://nextjs.org" target="_blank"><img src="https://img.shields.io/badge/Framework-NextJS?logo=next.js&label=Next.js&color=8b15ba" alt="Next.js Framework" /></a>

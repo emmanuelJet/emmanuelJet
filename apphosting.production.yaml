@@ -7,15 +7,25 @@ runConfig:
   
 env:
   - variable: NEXT_PUBLIC_APP_NAME
-    value: emmanuelJet
-  - variable: NEXT_PUBLIC_APP_HEADLINE
-    value: Building the future with Blockchain Technology as a Web Developer
+    value: Emmanuel Joseph (JET)
+  - variable: NEXT_PUBLIC_APP_TAGLINE
+    value: Building the future with Blockchain Technology as a Web Engineer
+  - variable: NEXT_PUBLIC_APP_DESCRIPTION
+    value: Emmanuel Joseph (JET) is a Web and Blockchain Engineer with a passion for building the future with blockchain technology
   - variable: NEXT_PUBLIC_APP_ENVIRONMENT
     value: production
+  - variable: NEXT_PUBLIC_APP_LAUNCHED_AT
+    value: 2025-04-28T00:00:00.000Z
+  - variable: NEXT_PUBLIC_APP_VERSION
+    value: 1.0.0
   - variable: NEXT_PUBLIC_APP_KEYWORDS
-    value: emmanueljet, Emmanuel Joseph (JET), Web and Blockchain Developer
+    value: JET, emmanueljet, Emmanuel Joseph, Emmanuel Joseph (JET), Web and Blockchain Developer, Web and Blockchain Engineer, Blockchain Developer, Blockchain Engineer, Software Developer, Software Engineer, Web3 Developer, Web3 Engineer, Web Developer, Web Engineer, Nigeria, Africa
   - variable: NEXT_PUBLIC_APP_URL
     value: https://emmanueljet.com
+  - variable: NEXT_PUBLIC_JET_DOB
+    value: emmanueljet-dob
+  - variable: NEXT_PUBLIC_JET_EMAIL
+    value: hello@emmanueljet.com
   - variable: NEXT_PUBLIC_FIREBASE_APP_ID
     value: 1:668492519686:web:d0cc75608e4d6d05dda687
   - variable: NEXT_PUBLIC_FIREBASE_API_KEY

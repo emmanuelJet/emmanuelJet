@@ -1,17 +1,26 @@
 import Link from 'next/link'
 
+import PageLayout from '@/components/PageLayout';
+import { getPageConfig, getPageMetadata } from '@/utilities';
+
+const pageConfig = getPageConfig('not-found');
+export const metadata = getPageMetadata(pageConfig.name);
+
 const NotFound = () => {
+  const { title, description } = pageConfig;
+
   return (
-    <main className='min-h-screen flex flex-col items-center justify-center px-6 py-20 md:flex-row md:gap-16 bg-[var(--color-bg)] text-[var(--color-text)] transition-all'>
-      <div className='flex flex-col items-center'>
-        <h1 className='text-6xl font-bold'>404</h1>
-        <p className='mt-4 text-lg'>Page Not Found</p>
-        <Link href='/' className='mt-6 text-[var(--color-primary)] rounded-lg border-2 border-solid bg-dark px-4 py-2
-        font-semibold hover:border-primary-700'>
-          Go Home
-        </Link>
-      </div>
-    </main>
+    <PageLayout className='text-center'>
+      <h1 className='text-6xl font-bold mb-4'>404</h1>
+      <h2 className='text-3xl font-semibold mb-3'>{title}</h2>
+      <p className='text-xl mb-6'>{description}</p>
+      <Link
+        href='/'
+        className='inline-block px-6 py-3 rounded-md border-2 font-semibold hover:border-primary-700 hover:bg-primary-700 hover:text-white transition'
+      >
+        Go back home
+      </Link>
+    </PageLayout>
   )
 }
 
