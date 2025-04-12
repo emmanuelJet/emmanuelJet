@@ -62,7 +62,6 @@ export const schemaCreator = {
 	additionalName: name.middle,
 	alternateName: name.username,
   ...(dob && { birthDate: new Date(dob).toISOString() }),
-	legalName: `${name.last.toUpperCase()}, ${name.first} ${name.middle}`,
   gender: 'GenderType::Male',
   jobTitle: 'Lead Engineer',
 	email: `mailto:${email}`,
@@ -96,8 +95,23 @@ export const schemaCreator = {
 	},
   hasOccupation: {
     '@type': 'Occupation',
-    'name': 'Lead Engineer',
-    'educationRequirements': 'Bsc in Computer Science'
+    name: 'Lead Engineer',
+    mainEntityOfPage: url,
+    description: 'Lead Engineer at Treate',
+    educationRequirements: 'Bsc in Computer Science',
+    occupationLocation: {
+      '@type': 'Country',
+      name: country,
+      alternateName: 'NG'
+    },
+    estimatedSalary: {
+      '@type': 'MonetaryAmount',
+      name: 'Lead Engineer Monthly Salary',
+      currency: 'NGN',
+      minValue: 500000,
+      maxValue: 2500000,
+      value: 1000000,
+    }
   },
 	contactPoint: {
 		'@type': 'ContactPoint',
