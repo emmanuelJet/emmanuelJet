@@ -23,7 +23,7 @@ env:
   - variable: NEXT_PUBLIC_APP_URL
     value: https://emmanueljet.com
   - variable: NEXT_PUBLIC_JET_DOB
-    value: emmanueljet-dob
+    value: EMMANUELJET_DOB
   - variable: NEXT_PUBLIC_JET_EMAIL
     value: hello@emmanueljet.com
   - variable: NEXT_PUBLIC_FIREBASE_APP_ID
