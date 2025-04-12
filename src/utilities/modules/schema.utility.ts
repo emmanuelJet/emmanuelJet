@@ -98,6 +98,10 @@ export const schemaCreator = {
     name: 'Lead Engineer',
     description: 'Lead Engineer at Treate',
     educationRequirements: 'Bsc in Computer Science',
+    mainEntityOfPage: {
+      "@type": 'WebPage',
+      lastReviewed: new Date().toISOString(),
+    },
     occupationLocation: {
       '@type': 'Country',
       name: country,
@@ -105,7 +109,8 @@ export const schemaCreator = {
     },
     estimatedSalary: {
       '@type': 'MonetaryAmountDistribution',
-      duration: '1Y',
+      name: 'Lead Engineer Estimated Salary',
+      duration: 'P1Y',
       currency: 'NGN',
       median: 1000000,
       percentile10: 900000,
