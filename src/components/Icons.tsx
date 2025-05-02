@@ -1,19 +1,19 @@
 import React from 'react';
 
 export const LinkedInIcon: React.FC<React.SVGProps<SVGSVGElement>> = () => (
-  <svg className='w-6 h-6 fill-current text-[var(--color-text)] hover:text-[var(--color-primary)] hover:scale-150 transition-transform transition-colors' fill='currentColor' viewBox='0 0 16 16'>
+  <svg className='w-6 h-6 fill-current text-gray-900 dark:text-gray-50 hover:text-primary hover:scale-150 transition-transform transition-colors' fill='currentColor' viewBox='0 0 16 16'>
     <path d='M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z'/>
   </svg>
 );
 
 export const XIcon: React.FC<React.SVGProps<SVGSVGElement>> = () => (
-  <svg className='w-6 h-6 fill-current text-[var(--color-text)] hover:text-[var(--color-primary)] hover:scale-150 transition-transform transition-colors' fill='currentColor' viewBox='0 0 512 512'>
+  <svg className='w-6 h-6 fill-current text-gray-900 dark:text-gray-50 hover:text-primary hover:scale-150 transition-transform transition-colors' fill='currentColor' viewBox='0 0 512 512'>
     <path d='M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z'/>
   </svg>
 );
 
 export const GithubIcon: React.FC<React.SVGProps<SVGSVGElement>> = () => (
-  <svg className='w-6 h-6 fill-current text-[var(--color-text)] hover:text-[var(--color-primary)] hover:scale-150 transition-transform transition-colors' fill='currentColor' viewBox='0 0 24 24'>
+  <svg className='w-6 h-6 fill-current text-gray-900 dark:text-gray-50 hover:text-primary hover:scale-150 transition-transform transition-colors' fill='currentColor' viewBox='0 0 24 24'>
     <path d='M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.16c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.74.08-.74 1.2.09 1.83 1.23 1.83 1.23 1.07 1.83 2.8 1.3 3.48.99.11-.77.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.96 0-1.32.47-2.4 1.23-3.24-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23.66 1.65.24 2.87.12 3.17.77.84 1.23 1.92 1.23 3.24 0 4.63-2.81 5.66-5.49 5.96.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.83.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z'/>
   </svg>
 );
@@ -153,7 +153,7 @@ export const SunIcon: React.FC<React.SVGProps<SVGSVGElement>> = ({ className, ..
           values='3;12'
         />
       </circle>
-      <circle cx='22' cy='2' r='1'>
+      <circle cx='22' cy='2' r='1' fill='#fff'>
         <animate
           fill='freeze'
           attributeName='cx'
@@ -308,7 +308,7 @@ export const MoonIcon: React.FC<React.SVGProps<SVGSVGElement>> = ({ className, .
           values='12;3'
         />
       </circle>
-      <circle cx='18' cy='6' r='10'>
+      <circle cx='18' cy='6' r='10' fill='#fff'>
         <animate
           fill='freeze'
           attributeName='cx'

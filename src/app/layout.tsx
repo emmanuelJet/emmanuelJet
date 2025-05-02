@@ -38,7 +38,7 @@ const RootLayout = ({
 				/>
       </head>
       <body
-        className='bg-[var(--color-bg)] text-[var(--color-text)] transition-colors duration-300'
+        className='text-gray-900 dark:text-gray-50 transition-colors duration-300'
       >
         <div className='absolute top-4 right-4 z-50'>
           <ThemeToggle />

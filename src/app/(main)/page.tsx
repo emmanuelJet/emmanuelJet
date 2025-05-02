@@ -54,10 +54,10 @@ const Home = () => {
         custom={3}
       >
         <p className='text-lg md:text-xl font-medium text-primary-500 mb-2'>Hi, I am</p>
-        <h1 className='text-4xl md:text-5xl font-semibold leading-tight'>
+        <h1 className='text-4xl md:text-5xl font-semibold leading-tight text-gray-900 dark:text-gray-50'>
           {`${name.first} ${name.last}`} <span className='text-primary-500'>({name.nickname})</span>
         </h1>
-        <p className='mt-4 text-lg leading-relaxed text-[var(--color-text)]'>
+        <p className='mt-4 text-lg leading-relaxed text-gray-900 dark:text-gray-50'>
           An experienced Web & Blockchain Engineer passionate about creating scalable backends, secure smart contracts, and AI-powered solutions for Africa and beyond.
         </p>
 
