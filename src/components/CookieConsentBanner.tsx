@@ -44,22 +44,8 @@ const CookieConsentBanner = () => {
       const newTrace = initPerformanceTrace('cookie_consent_banner');
       newTrace.start();
       setBannerTrace(newTrace);
-    } else if (consentCookie === CONSENT_GRANTED || consentCookie === CONSENT_DENIED) {
-      setIsVisible(false);
-      if (bannerTrace) {
-        bannerTrace.stop();
-        setBannerTrace(undefined);
-      }
     }
-
-     return () => {
-       if (bannerTrace) {
-        bannerTrace.stop();
-        setBannerTrace(undefined);
-       }
-     };
-
-  }, [consentCookie, bannerTrace]);
+  }, [consentCookie]);
 
 
   const handleAccept = () => {
@@ -117,6 +103,7 @@ const CookieConsentBanner = () => {
       <div className='flex flex-row gap-2 mt-2 sm:mt-0 w-full sm:w-auto'>
         <Button
           size='md'
+          type='button'
           variant='primary'
           onClick={handleAccept}
           className='w-full justify-center sm:w-auto'
@@ -125,6 +112,7 @@ const CookieConsentBanner = () => {
         </Button>
         <Button
           size='md'
+          type='button'
           variant='outline'
           onClick={handleReject}
           className='w-full justify-center sm:w-auto'
