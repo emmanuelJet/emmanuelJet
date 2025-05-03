@@ -5,8 +5,9 @@ import { Open_Sans } from 'next/font/google';
 import { usePathname } from 'next/navigation';
 import { AnimatePresence } from 'framer-motion';
 
-import ThemeToggle from '@/components/ThemeToggle';
 import { getPageSchema, getPageConfigByPath } from '@/utilities';
+import ThemeToggle from '@/components/ThemeToggle';
+import AppProvider from '@/providers';
 
 const openSans = Open_Sans({
   weight: ['400', '500', '600', '700'],
@@ -40,13 +41,15 @@ const RootLayout = ({
       <body
         className='text-gray-900 dark:text-gray-50 transition-colors duration-300'
       >
-        <div className='absolute top-4 right-4 z-50'>
-          <ThemeToggle />
-        </div>
+        <AppProvider>
+          <div className='absolute top-4 right-4 z-50'>
+            <ThemeToggle />
+          </div>
 
-        <AnimatePresence mode='wait'>
-          {children}
-        </AnimatePresence>
+          <AnimatePresence mode='wait'>
+            {children}
+          </AnimatePresence>
+        </AppProvider>
       </body>
     </html>
   );
