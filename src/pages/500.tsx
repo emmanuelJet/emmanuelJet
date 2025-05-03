@@ -24,7 +24,7 @@ const Error500 = () => {
 					}}
 				/>
 			</Head>
-      <div className='bg-[var(--color-bg)] text-[var(--color-text)] transition-colors duration-300'>
+      <div className='bg-white text-gray-900 dark:bg-gray-950 dark:text-gray-50 transition-colors duration-300'>
         <div className='absolute top-4 right-4 z-50'>
           <ThemeToggle />
         </div>

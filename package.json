@@ -1,6 +1,6 @@
 {
   "name": "emmanueljet",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "description": "Emmanuel Joseph (JET) - Web and Blockchain Engineer",
   "author": "Emmanuel Joseph <hello@emmanueljet.com> (https://emmanueljet.com)",
@@ -30,7 +30,9 @@
     "prepare": "husky"
   },
   "dependencies": {
+    "firebase": "^11.6.1",
     "framer-motion": "^12.6.3",
+    "js-cookie": "^3.0.5",
     "next": "^15.2.5",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
@@ -38,6 +40,7 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
+    "@types/js-cookie": "^3.0.6",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
