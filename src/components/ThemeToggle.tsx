@@ -48,6 +48,7 @@ const ThemeToggle = () => {
     document.documentElement.classList.add(newTheme);
     localStorage.setItem('theme', newTheme);
     setTheme(newTheme);
+    applyTheme(newTheme);
   };
 
   if (!mounted) return null;
