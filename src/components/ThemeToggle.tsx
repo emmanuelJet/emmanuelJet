@@ -29,6 +29,19 @@ const ThemeToggle = () => {
     setMounted(true);
   }, []);
 
+  // TODO: Ensure theme switcher uses `prefers-color-scheme`
+  const applyTheme = (mode: 'light' | 'dark') => {
+    const root = document.documentElement;
+
+    if (mode === 'light') {
+      root.style.setProperty('--color-bg', 'var(--color-bg-light)');
+      root.style.setProperty('--color-text', 'var(--color-text-dark)');
+    } else {
+      root.style.setProperty('--color-bg', '#0e0e0e');
+      root.style.setProperty('--color-text', '#f5f5f5');
+    }
+  }
+
   const toggleTheme = () => {
     const newTheme = theme === 'dark' ? 'light' : 'dark';
     document.documentElement.classList.remove('dark', 'light');

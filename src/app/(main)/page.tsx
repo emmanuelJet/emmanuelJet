@@ -29,7 +29,7 @@ const Home = () => {
     <PageLayout className='md:flex-row md:gap-16'>
       {/* Headshot */}
       <motion.div
-        className='w-40 h-40 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-primary shadow-xl'
+        className='w-40 h-40 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-primary-600 dark:border-primary-400 shadow-xl'
         variants={fadeInUp}
         initial='hidden'
         animate='visible'
@@ -53,9 +53,9 @@ const Home = () => {
         animate='visible'
         custom={3}
       >
-        <p className='text-lg md:text-xl font-medium text-primary-500 mb-2'>Hi, I am</p>
-        <h1 className='text-4xl md:text-5xl font-semibold leading-tight text-gray-900 dark:text-gray-50'>
-          {`${name.first} ${name.last}`} <span className='text-primary-500'>({name.nickname})</span>
+        <p className='text-lg md:text-xl font-medium text-primary-600 dark:text-primary-400 mb-2'>Hi, I am</p>
+        <h1 className='text-4xl md:text-5xl font-semibold leading-tight'>
+          {`${name.first} ${name.last}`} <span className='text-primary-600 dark:text-primary-400'>({name.nickname})</span>
         </h1>
         <p className='mt-4 text-lg leading-relaxed text-gray-900 dark:text-gray-50'>
           An experienced Web & Blockchain Engineer passionate about creating scalable backends, secure smart contracts, and AI-powered solutions for Africa and beyond.
